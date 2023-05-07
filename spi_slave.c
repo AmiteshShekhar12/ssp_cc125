@@ -1,10 +1,10 @@
 #define F_CPU 8000000UL
 #include <avr/io.h>
 #include <util/delay.h>
-#define MISO PB3
-#define MOSI PB2
-#define SCK PB1
-#define SS PB0
+#define MISO DDRB3
+#define MOSI DDRB2
+#define SCK DDRB1
+#define SS DDRB0
 #define baud 9600
 void spiInit()					
 {
