@@ -1,10 +1,10 @@
 #define F_CPU 160000000UL
 #include<avr/io.h>
 #include<util/delay.h>
-#define MISO DDRB3
-#define MOSI DDRB2
-#define SCK DDRB1
-#define SS DDRB0
+#define MISO DDB3
+#define MOSI DDB2
+#define SCK DDB1
+#define SS DDB0
 void spiInit(void)
 {
     DDRB |=(1<<MOSI)|(1<<SCK)|(1<<SS);
